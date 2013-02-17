@@ -46,7 +46,10 @@ module.exports = {
                 return;
             }
             var collection = new mongo.Collection(client, 'entries')
-            collection.find({}, {}).toArray(function (err, list) {
+            collection.find({}, {
+                Teaser: true,
+                Title: true
+            }).toArray(function (err, list) {
                 if (err) res.send(500)
                 else res.send(list)
             })

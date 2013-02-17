@@ -9,6 +9,7 @@ omf(app, function (client) {
     describe("create", function () {
         var testEntry = {
             Body: "test body",
+            Teaser: "test teaser",
             Title: "test title"
         };
         client.post('/entry/',
