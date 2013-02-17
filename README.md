@@ -3,7 +3,7 @@
  - potrzebny będzie [node.js](http://nodejs.org/download/) oraz [mongodb](http://www.mongodb.org/downloads)
  - zciągamy repozytorium
  - odpalamy mongodb z domyślnymi ustawieniami
- - otwieramy konsole i w z ciągniętym folderze wykonujemy komndy:
+ - otwieramy konsole i w pobranym folderze wykonujemy komndy:
   - `npm install` - zainstaluje wszystkie wymagane zależności
 	- `npm install -g mocha` - zainstaluje środowisko testowe globalnie
 	- `mocha` - odpala testy
