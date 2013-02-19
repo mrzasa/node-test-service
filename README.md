@@ -10,6 +10,11 @@
 	- `node server` - odpala nasz serwerek na porcie 4000
 
 # zadanka
+## 2. zasób entry cd.
+ - usuwanie elementu (request delete pod `/entry/<id>`)
+ - nadpisanie elementu (request put pod `/entry/<id>`)
+ - paginacja/virtual scrolling - w tym momencie serwer zwraca pierwsze 10 wpisów jeżeli nie podamy zakresu. Aby określić zakres wysyłamy nagłówek `Range` o wartości `rows=<od>-<do>`
+
 ## 1. zasób entry
  - listowanie elementów (request get pod `/entry/`)
  - dodawanie elementów (request post pod `/entry/`)
