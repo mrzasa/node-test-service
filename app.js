@@ -5,6 +5,9 @@ var express = require('express')
 var app = express();
 
 app.configure(function () {
+    app.use(express.favicon());
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
     app.all('*', function (req, res, next) {
         res.header('Access-Control-Allow-Origin', '*');
         res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
@@ -14,9 +17,6 @@ app.configure(function () {
         else
             next();
     });
-    app.use(express.favicon());
-    app.use(express.bodyParser());
-    app.use(express.methodOverride());
     routes(app)
     app.use(express.static(path.join(__dirname, 'public')));
     app.use(function (req, res) {
